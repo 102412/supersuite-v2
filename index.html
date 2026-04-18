@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Supersuite — Build. Launch. Grow.</title>
+  <meta name="description" content="Supersuite: The visual website builder for founders, marketers and agencies. No code. Revenue blocks. Export-ready."/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff6b35'/%3E%3Ctext x='16' y='23' font-family='Arial Black,sans-serif' font-size='16' font-weight='900' text-anchor='middle' fill='white'%3ESS%3C/text%3E%3C/svg%3E"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link id="google-fonts-link" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700;900&family=Raleway:wght@300;400;600;700;800&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body class="lp-active">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     LANDING PAGE
+════════════════════════════════════════════════════════════════ -->
+<div id="landing-page" class="lp-root">
+
+  <nav class="lp-nav">
+    <div class="lp-nav-inner">
+      <div class="lp-nav-logo">
+        <span class="lp-logo-mark">SS</span>
+        <span class="lp-logo-text">Supersuite</span>
+        <span class="lp-version-tag">v26.1</span>
+      </div>
+      <div class="lp-nav-links" id="lp-desktop-links">
+        <a href="#lp-features">Features</a>
+        <a href="#lp-pricing">Pricing</a>
+        <a href="#lp-faq">FAQ</a>
+      </div>
+      <button class="lp-nav-cta" onclick="openLoginModal()">Enter Builder →</button>
+      <button class="lp-hamburger" id="lp-hamburger" onclick="toggleLpNav()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="lp-nav-mobile" id="lp-nav-mobile">
+      <a href="#lp-features" onclick="toggleLpNav()">Features</a>
+      <a href="#lp-pricing" onclick="toggleLpNav()">Pricing</a>
+      <a href="#lp-faq" onclick="toggleLpNav()">FAQ</a>
+      <button class="lp-nav-cta" style="margin-top:10px;" onclick="openLoginModal();toggleLpNav()">Enter Builder →</button>
+    </div>
+  </nav>
+
+  <section class="lp-hero">
+    <div class="lp-hero-orb lp-orb-1"></div>
+    <div class="lp-hero-orb lp-orb-2"></div>
+    <div class="lp-hero-orb lp-orb-3"></div>
+    <div class="lp-hero-inner">
+      <div class="lp-hero-badge">🚀 Official Launch · SSV26.1</div>
+      <h1 class="lp-hero-heading">Build Your Dream Site.<br/><span class="lp-hero-accent">No Code. No Limits.</span></h1>
+      <p class="lp-hero-sub">Supersuite is the visual website builder that puts professional design in your hands. Drop in revenue blocks, customize everything, and launch in minutes — not weeks.</p>
+      <div class="lp-hero-ctas">
+        <button class="lp-btn-primary" onclick="openLoginModal()">Enter Access Code →</button>
+        <a href="#lp-features" class="lp-btn-ghost">See Features ↓</a>
+      </div>
+      <div class="lp-hero-stats">
+        <div class="lp-stat"><span class="lp-stat-num">10</span><span class="lp-stat-label">Block Types</span></div>
+        <div class="lp-stat-divider"></div>
+        <div class="lp-stat"><span class="lp-stat-num">3</span><span class="lp-stat-label">Templates</span></div>
+        <div class="lp-stat-divider"></div>
+        <div class="lp-stat"><span class="lp-stat-num">100%</span><span class="lp-stat-label">Export-Ready</span></div>
+        <div class="lp-stat-divider"></div>
+        <div class="lp-stat"><span class="lp-stat-num">Live</span><span class="lp-stat-label">Collab</span></div>
+      </div>
+      <div class="lp-demo-preview">
+        <div class="lp-demo-chrome">
+          <div class="lp-demo-dots"><span></span><span></span><span></span></div>
+          <div class="lp-demo-url">supersuite.app/builder</div>
+        </div>
+        <div class="lp-demo-screen">
+          <div class="lp-demo-sidebar">
+            <div class="lp-ds-item"></div><div class="lp-ds-item"></div>
+            <div class="lp-ds-item"></div><div class="lp-ds-item"></div>
+          </div>
+          <div class="lp-demo-canvas">
+            <div class="lp-demo-block lp-db-hero">
+              <div class="lp-db-hero-line"></div>
+              <div class="lp-db-hero-sub"></div>
+              <div class="lp-db-hero-btn"></div>
+            </div>
+            <div class="lp-demo-block lp-db-feat">
+              <div class="lp-db-feat-grid"><div></div><div></div><div></div></div>
+            </div>
+            <div class="lp-demo-block lp-db-price">
+              <div class="lp-db-price-cards"><div></div><div class="lp-db-pc-featured"></div><div></div></div>
+            </div>
+          </div>
+          <div class="lp-demo-right">
+            <div class="lp-dr-item"></div>
+            <div class="lp-dr-item"></div>
+            <div class="lp-dr-item lp-dr-color"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lp-features" id="lp-features">
+    <div class="lp-section-inner">
+      <div class="lp-section-label">What You Get</div>
+      <h2 class="lp-section-title">Everything to Launch Fast</h2>
+      <p class="lp-section-sub">Professional tools without the complexity — built for founders, marketers, and agencies.</p>
+      <div class="lp-features-grid">
+        <div class="lp-feat-card"><div class="lp-feat-icon">⚡</div><h3>Revenue Blocks</h3><p>10 professionally designed blocks — Hero, Lead Form, Pricing, Widget Importer, and more. Drag, drop, and customize in seconds.</p></div>
+        <div class="lp-feat-card"><div class="lp-feat-icon">🎨</div><h3>Live Visual Editor</h3><p>See every change instantly. Edit text, colors, fonts, spacing, and layouts without touching a line of code.</p></div>
+        <div class="lp-feat-card"><div class="lp-feat-icon">🤝</div><h3>Live Collaboration</h3><p>Share your project with a unique invite code. Multiple editors work together in real time with full sync.</p></div>
+        <div class="lp-feat-card"><div class="lp-feat-icon">💾</div><h3>Project Library</h3><p>Save multiple projects locally. Switch between sites, resume where you left off, and manage your whole portfolio.</p></div>
+        <div class="lp-feat-card"><div class="lp-feat-icon">🚀</div><h3>Perfect Exports</h3><p>Export pixel-perfect HTML/CSS/JS. Full style retention, automatic mobile optimization, and correct sizing on every device.</p></div>
+        <div class="lp-feat-card"><div class="lp-feat-icon">🔌</div><h3>Widget Imports</h3><p>Embed Elfsight, Tidio, Cal.com and any iframe/script widget directly as a revenue block in your page.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lp-pricing" id="lp-pricing">
+    <div class="lp-section-inner">
+      <div class="lp-section-label">Pricing</div>
+      <h2 class="lp-section-title lp-title-light">Simple, Transparent Plans</h2>
+      <p class="lp-section-sub lp-sub-light">Start free. Scale as you grow. No hidden fees.</p>
+      <div class="lp-pricing-grid">
+        <div class="lp-plan-card">
+          <div class="lp-plan-name">Free / Trial</div>
+          <div class="lp-plan-price">$0<span>/mo</span></div>
+          <div class="lp-plan-desc">Try it out — no credit card needed.</div>
+          <ul class="lp-plan-features">
+            <li>✓ 1 site export per week</li><li>✓ 30 min session/day</li>
+            <li>✓ All 10 block types</li><li>✓ 3 starter templates</li>
+            <li>✓ Project library (3 projects)</li>
+            <li class="lp-feat-off">✗ Collaboration (view only)</li>
+            <li class="lp-feat-off">✗ White-label export</li>
+          </ul>
+          <button class="lp-plan-btn" onclick="openLoginModal('free')">Get Started Free</button>
+        </div>
+        <div class="lp-plan-card">
+          <div class="lp-plan-name">Basic</div>
+          <div class="lp-plan-price">$9<span>/mo</span></div>
+          <div class="lp-plan-desc">For solo builders shipping regularly.</div>
+          <ul class="lp-plan-features">
+            <li>✓ 1 site export per day</li><li>✓ 60 min session/day</li>
+            <li>✓ All 10 block types</li><li>✓ Collaboration (up to 2 editors)</li>
+            <li>✓ Project library (10 projects)</li>
+            <li>✓ Email support</li>
+            <li class="lp-feat-off">✗ White-label export</li>
+          </ul>
+          <button class="lp-plan-btn" onclick="openLoginModal('basic')">Start Basic</button>
+        </div>
+        <div class="lp-plan-card lp-plan-featured">
+          <div class="lp-plan-badge">Most Popular ⭐</div>
+          <div class="lp-plan-name">Pro</div>
+          <div class="lp-plan-price">$29<span>/mo</span></div>
+          <div class="lp-plan-desc">For serious builders with real output.</div>
+          <ul class="lp-plan-features">
+            <li>✓ 3 site exports per day</li><li>✓ 180 min session/day</li>
+            <li>✓ All 10 block types</li><li>✓ Collaboration (unlimited editors)</li>
+            <li>✓ Unlimited project library</li>
+            <li>✓ Priority support</li><li>✓ White-label export</li>
+          </ul>
+          <button class="lp-plan-btn lp-plan-btn-featured" onclick="openLoginModal('pro')">Start Pro Trial</button>
+        </div>
+        <div class="lp-plan-card">
+          <div class="lp-plan-name">Agency</div>
+          <div class="lp-plan-price">$99<span>/mo</span></div>
+          <div class="lp-plan-desc">For teams and agencies at scale.</div>
+          <ul class="lp-plan-features">
+            <li>✓ Unlimited exports</li><li>✓ Unlimited session time</li>
+            <li>✓ All 10 block types</li><li>✓ Unlimited collaboration</li>
+            <li>✓ Unlimited project library</li>
+            <li>✓ API access (SSV26.2+)</li><li>✓ SLA + dedicated support</li>
+          </ul>
+          <button class="lp-plan-btn" onclick="openLoginModal('agency')">Contact Sales</button>
+        </div>
+      </div>
+      <p class="lp-pricing-note">All plans include SSL, CDN-ready export, full block library, and project library. Upgrade or cancel anytime.</p>
+    </div>
+  </section>
+
+  <section class="lp-faq" id="lp-faq">
+    <div class="lp-section-inner">
+      <div class="lp-section-label">FAQ</div>
+      <h2 class="lp-section-title">Common Questions</h2>
+      <div class="lp-faq-list">
+        <div class="lp-faq-item">
+          <button class="lp-faq-q" onclick="toggleFaq(this)">What is an access code?<span class="lp-faq-arrow">▾</span></button>
+          <div class="lp-faq-a">An access code grants entry to the Supersuite builder. Each plan has unique codes. During beta use: <strong>SS26</strong> (Free), <strong>SSBASIC</strong> (Basic), <strong>SSPRO</strong> (Pro), or <strong>SSAGENCY</strong> (Agency). SSV26.2+ will support full email/password authentication.</div>
+        </div>
+        <div class="lp-faq-item">
+          <button class="lp-faq-q" onclick="toggleFaq(this)">How does live collaboration work?<span class="lp-faq-arrow">▾</span></button>
+          <div class="lp-faq-a">As the project owner, open the Share panel in the builder and click "Create Invite Code." Share that code with your team. Collaborators get 2 hours/day of editing access. Their changes sync to your project in real time using localStorage broadcast. Collaborators cannot export — exports are owner-only.</div>
+        </div>
+        <div class="lp-faq-item">
+          <button class="lp-faq-q" onclick="toggleFaq(this)">How does the project library work?<span class="lp-faq-arrow">▾</span></button>
+          <div class="lp-faq-a">The project library lets you save, name, and load multiple website projects locally in your browser. Switch between them anytime from the Projects panel in the sidebar. Free users can store 3 projects; Basic gets 10; Pro and Agency get unlimited.</div>
+        </div>
+        <div class="lp-faq-item">
+          <button class="lp-faq-q" onclick="toggleFaq(this)">What does the export include?<span class="lp-faq-arrow">▾</span></button>
+          <div class="lp-faq-a">Clicking "It's Go Time 🚀" downloads a complete standalone <strong>index.html</strong> with all CSS inlined and full mobile responsiveness. Every style, color, font, block, and layout is 100% retained. Open the file in any browser — no server needed.</div>
+        </div>
+        <div class="lp-faq-item">
+          <button class="lp-faq-q" onclick="toggleFaq(this)">How do I import widgets like Elfsight?<span class="lp-faq-arrow">▾</span></button>
+          <div class="lp-faq-a">Add the "Widget / Embed" block from the block library. Paste any HTML embed code — Elfsight widgets, Tidio chat, Cal.com booking, Stripe Buy buttons, YouTube embeds, or any iframe. The widget renders live in the preview and exports perfectly.</div>
+        </div>
+        <div class="lp-faq-item">
+          <button class="lp-faq-q" onclick="toggleFaq(this)">Is my work saved between sessions?<span class="lp-faq-arrow">▾</span></button>
+          <div class="lp-faq-a">Yes. All projects auto-save to your browser's localStorage every 30 seconds. Your project library persists across sessions. Full cloud sync with user accounts is planned for SSV26.2.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="lp-footer">
+    <div class="lp-footer-inner">
+      <div class="lp-footer-brand">
+        <span class="lp-logo-mark" style="width:28px;height:28px;font-size:11px;border-radius:7px;">SS</span>
+        <span style="font-family:'Syne',sans-serif;font-weight:800;font-size:15px;">Supersuite</span>
+        <span class="lp-version-tag">v26.1</span>
+      </div>
+      <p class="lp-footer-copy">© 2026 Supersuite, Inc. All rights reserved. &nbsp;·&nbsp;<a href="#lp-features">Features</a> &nbsp;·&nbsp;<a href="#lp-pricing">Pricing</a> &nbsp;·&nbsp;<a href="#lp-faq">FAQ</a></p>
+    </div>
+  </footer>
+
+</div><!-- /#landing-page -->
+
+<!-- ═══════════════════════════════════════════════════════════════
+     LOGIN MODAL
+════════════════════════════════════════════════════════════════ -->
+<div id="login-modal" class="login-modal-overlay" style="display:none;">
+  <div class="login-modal-card">
+    <button class="login-modal-close" onclick="closeLoginModal()" aria-label="Close">✕</button>
+    <div class="gate-logo" style="margin-bottom:20px;">
+      <span class="gate-logo-mark">SS</span>
+      <span class="gate-logo-text">Supersuite</span>
+    </div>
+    <h2 class="login-modal-title">Enter Your Access Code</h2>
+    <p class="login-modal-sub">Your code determines your plan tier. <a href="#lp-pricing" onclick="closeLoginModal()">See plans →</a></p>
+    <div class="login-tier-hint" id="login-tier-hint" style="display:none;"></div>
+    <div class="gate-input-wrap" style="margin-top:16px;">
+      <input type="password" id="gate-input" placeholder="Access code (e.g. SS26)" maxlength="32" autocomplete="off" oninput="previewTierFromCode(this.value)"/>
+      <button id="gate-btn" onclick="checkPassword()">Enter →</button>
+    </div>
+    <p id="gate-error" class="gate-error"></p>
+    <div class="login-modal-tiers">
+      <div class="lmt-row"><span class="lmt-code">SS26</span><span class="lmt-tier lmt-free">Free</span><span class="lmt-limit">1 site/wk · 30 min/day</span></div>
+      <div class="lmt-row"><span class="lmt-code">SSBASIC</span><span class="lmt-tier lmt-basic">Basic</span><span class="lmt-limit">1 site/day · 60 min/day</span></div>
+      <div class="lmt-row"><span class="lmt-code">SSPRO</span><span class="lmt-tier lmt-pro">Pro</span><span class="lmt-limit">3 sites/day · 180 min/day</span></div>
+      <div class="lmt-row"><span class="lmt-code">SSAGENCY</span><span class="lmt-tier lmt-agency">Agency</span><span class="lmt-limit">Unlimited</span></div>
+    </div>
+    <div class="gate-badge" style="margin-top:16px;">🔒 Secure · Session-based · No external data storage</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     BUILDER APP
+════════════════════════════════════════════════════════════════ -->
+<div id="app" class="app-shell" style="display:none;">
+
+  <!-- TOP NAV -->
+  <header class="top-nav">
+    <div class="nav-left">
+      <div class="nav-logo">
+        <span class="nav-logo-mark">SS</span>
+        <span class="nav-logo-text">Supersuite</span>
+      </div>
+      <div class="nav-site-name">
+        <input type="text" id="site-name-input" value="My Awesome Site" onchange="markProjectDirty()"/>
+      </div>
+    </div>
+    <div class="nav-center">
+      <div class="device-switcher">
+        <button class="device-btn active" data-device="desktop" onclick="switchDevice('desktop')" title="Desktop">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </button>
+        <button class="device-btn" data-device="tablet" onclick="switchDevice('tablet')" title="Tablet">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="18" r="1" fill="currentColor"/></svg>
+        </button>
+        <button class="device-btn" data-device="mobile" onclick="switchDevice('mobile')" title="Mobile">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"/><circle cx="12" cy="18" r="1" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="nav-right">
+      <div class="nav-session-info" id="nav-session-info" title="Session usage">
+        <span class="nav-tier-badge" id="nav-tier-badge">Free</span>
+        <span class="nav-timer" id="nav-timer">00:00</span>
+      </div>
+      <button class="btn-collab" onclick="openCollabModal()" title="Share & Collaborate">👥 Share</button>
+      <button class="btn-preview" onclick="openFullPreview()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        Preview
+      </button>
+      <button class="btn-export" onclick="exportSite()">It's Go Time 🚀</button>
+    </div>
+  </header>
+
+  <div class="builder-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-tabs">
+        <button class="stab active" data-tab="blocks" onclick="switchTab('blocks')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Blocks
+        </button>
+        <button class="stab" data-tab="templates" onclick="switchTab('templates')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Templates
+        </button>
+        <button class="stab" data-tab="styles" onclick="switchTab('styles')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/><path d="M13.5 9l-7 8.5M13.5 9l4 8.5"/></svg>Styles
+        </button>
+        <button class="stab" data-tab="projects" onclick="switchTab('projects')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>Projects
+        </button>
+        <button class="stab" data-tab="layers" onclick="switchTab('layers')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>Layers
+        </button>
+      </div>
+
+      <!-- BLOCKS TAB -->
+      <div class="tab-content active" id="tab-blocks">
+        <div class="tab-header">
+          <h3>Revenue Blocks</h3>
+          <p>Click to add to your page</p>
+          <button class="tab-header-action" onclick="openBlockSelectorModal()" title="Manage visible block types">⚙️ Manage</button>
+        </div>
+        <div class="block-library" id="block-library">
+          <div class="block-card" onclick="addBlock('hero')" draggable="true"><div class="block-card-preview hero-preview"><div class="bcp-title">HERO</div><div class="bcp-sub">Heading · CTA</div></div><div class="block-card-label"><span class="block-icon">⚡</span><div><strong>Hero Section</strong><small>Headline + CTA button</small></div></div></div>
+          <div class="block-card" onclick="addBlock('nav')" draggable="true"><div class="block-card-preview nav-preview"><div class="bcp-nav-inner"><div class="bcp-nav-logo"></div><div class="bcp-nav-links"><div></div><div></div><div></div></div></div></div><div class="block-card-label"><span class="block-icon">🧭</span><div><strong>Navigation</strong><small>Site header &amp; menu</small></div></div></div>
+          <div class="block-card" onclick="addBlock('features')" draggable="true"><div class="block-card-preview feat-preview"><div class="bcp-feat-grid"><div></div><div></div><div></div></div></div><div class="block-card-label"><span class="block-icon">✨</span><div><strong>Features</strong><small>Icon + text grid</small></div></div></div>
+          <div class="block-card" onclick="addBlock('leadform')" draggable="true"><div class="block-card-preview form-preview"><div class="bcp-form-lines"><div></div><div></div><div class="bcp-btn-mini"></div></div></div><div class="block-card-label"><span class="block-icon">📋</span><div><strong>Lead Form</strong><small>Capture leads &amp; emails</small></div></div></div>
+          <div class="block-card" onclick="addBlock('testimonials')" draggable="true"><div class="block-card-preview test-preview"><div class="bcp-stars">★★★★★</div><div class="bcp-quote-lines"><div></div><div></div></div></div><div class="block-card-label"><span class="block-icon">💬</span><div><strong>Testimonials</strong><small>Social proof cards</small></div></div></div>
+          <div class="block-card" onclick="addBlock('pricing')" draggable="true"><div class="block-card-preview pricing-preview"><div class="bcp-price-cards"><div class="bcp-pc"></div><div class="bcp-pc featured"></div><div class="bcp-pc"></div></div></div><div class="block-card-label"><span class="block-icon">💎</span><div><strong>Pricing / Services</strong><small>Plans &amp; tiers</small></div></div></div>
+          <div class="block-card" onclick="addBlock('cta')" draggable="true"><div class="block-card-preview cta-preview"><div class="bcp-cta-inner"><div class="bcp-cta-line"></div><div class="bcp-cta-btn"></div></div></div><div class="block-card-label"><span class="block-icon">🎯</span><div><strong>CTA Section</strong><small>Drive conversions</small></div></div></div>
+          <div class="block-card" onclick="addBlock('gallery')" draggable="true"><div class="block-card-preview gallery-preview"><div class="bcp-gallery-grid"><div></div><div></div><div></div><div></div></div></div><div class="block-card-label"><span class="block-icon">🖼️</span><div><strong>Gallery</strong><small>Image showcase</small></div></div></div>
+          <div class="block-card" onclick="addBlock('widget')" draggable="true"><div class="block-card-preview widget-preview"><div class="bcp-widget-inner"><div class="bcp-w-icon">🔌</div><div class="bcp-w-lines"><div></div><div></div></div></div></div><div class="block-card-label"><span class="block-icon">🔌</span><div><strong>Widget / Embed</strong><small>Elfsight, Tidio, iframes</small></div></div></div>
+          <div class="block-card" onclick="addBlock('footer')" draggable="true"><div class="block-card-preview footer-preview"><div class="bcp-footer-inner"><div class="bcp-footer-cols"><div></div><div></div><div></div></div><div class="bcp-footer-line"></div></div></div><div class="block-card-label"><span class="block-icon">📌</span><div><strong>Footer</strong><small>Links &amp; copyright</small></div></div></div>
+        </div>
+      </div>
+
+      <!-- TEMPLATES TAB -->
+      <div class="tab-content" id="tab-templates">
+        <div class="tab-header"><h3>Starter Templates</h3><p>Pick a style to begin</p></div>
+        <div class="template-list">
+          <div class="template-card active" id="tpl-glass" onclick="applyTemplate('glass')">
+            <div class="tpl-preview glass-tpl-prev"><div class="glp-blur-card"></div><div class="glp-blur-card2"></div><div class="glp-bg-orb"></div></div>
+            <div class="tpl-info"><strong>Liquid Glass</strong><small>Ultra-modern · Blur · Glass morphism</small></div>
+            <div class="tpl-check">✓</div>
+          </div>
+          <div class="template-card" id="tpl-bold" onclick="applyTemplate('bold')">
+            <div class="tpl-preview bold-tpl-prev"><div class="btp-line big"></div><div class="btp-line med"></div><div class="btp-accent"></div></div>
+            <div class="tpl-info"><strong>Classy Bold</strong><small>Minimal · Scrollytelling · Elegant</small></div>
+            <div class="tpl-check"></div>
+          </div>
+          <div class="template-card" id="tpl-custom" onclick="applyTemplate('custom')">
+            <div class="tpl-preview custom-tpl-prev"><div class="ctp-code">{'css'}</div></div>
+            <div class="tpl-info"><strong>Custom CSS</strong><small>Upload your own CSS snippet</small></div>
+            <div class="tpl-check"></div>
+          </div>
+        </div>
+        <div id="custom-css-panel" class="custom-css-panel" style="display:none;">
+          <label>Paste Custom CSS</label>
+          <textarea id="custom-css-input" placeholder=":root { --primary: #ff6b35; } body { font-family: 'YourFont'; }"></textarea>
+          <button onclick="applyCustomCSS()">Apply CSS</button>
+        </div>
+      </div>
+
+      <!-- GLOBAL STYLES TAB -->
+      <div class="tab-content" id="tab-styles">
+        <div class="tab-header"><h3>Global Styles</h3><p>Site-wide design tokens</p></div>
+        <div class="style-section">
+          <h4>Colors</h4>
+          <div class="style-row"><label>Primary</label><div class="color-input-wrap"><input type="color" id="color-primary" value="#ff6b35" oninput="updateGlobalStyle('--primary',this.value);syncHexInput(this)"/><input type="text" class="color-hex" id="hex-primary" value="#ff6b35" oninput="syncColorFromHex('color-primary','--primary',this.value)"/></div></div>
+          <div class="style-row"><label>Secondary</label><div class="color-input-wrap"><input type="color" id="color-secondary" value="#1a1a2e" oninput="updateGlobalStyle('--secondary',this.value);syncHexInput(this)"/><input type="text" class="color-hex" id="hex-secondary" value="#1a1a2e" oninput="syncColorFromHex('color-secondary','--secondary',this.value)"/></div></div>
+          <div class="style-row"><label>Accent</label><div class="color-input-wrap"><input type="color" id="color-accent" value="#ffd700" oninput="updateGlobalStyle('--accent',this.value);syncHexInput(this)"/><input type="text" class="color-hex" id="hex-accent" value="#ffd700" oninput="syncColorFromHex('color-accent','--accent',this.value)"/></div></div>
+          <div class="style-row"><label>Background</label><div class="color-input-wrap"><input type="color" id="color-bg" value="#ffffff" oninput="updateGlobalStyle('--bg',this.value);syncHexInput(this)"/><input type="text" class="color-hex" id="hex-bg" value="#ffffff" oninput="syncColorFromHex('color-bg','--bg',this.value)"/></div></div>
+          <div class="style-row"><label>Text</label><div class="color-input-wrap"><input type="color" id="color-text" value="#1a1a2e" oninput="updateGlobalStyle('--text',this.value);syncHexInput(this)"/><input type="text" class="color-hex" id="hex-text" value="#1a1a2e" oninput="syncColorFromHex('color-text','--text',this.value)"/></div></div>
+        </div>
+        <div class="style-section">
+          <h4>Typography</h4>
+          <div class="style-row"><label>Heading Font</label>
+            <select id="select-font-heading" onchange="updateFontHeading(this.value)">
+              <option value="Syne" selected>Syne</option>
+              <option value="Space Grotesk">Space Grotesk</option>
+              <option value="DM Sans">DM Sans</option>
+              <option value="Playfair Display">Playfair Display</option>
+              <option value="Raleway">Raleway</option>
+              <option value="Nunito">Nunito</option>
+              <option value="Georgia">Georgia (serif)</option>
+              <option value="Impact">Impact</option>
+              <option value="Courier New">Courier New</option>
+            </select>
+          </div>
+          <div class="style-row"><label>Body Font</label>
+            <select id="select-font-body" onchange="updateFontBody(this.value)">
+              <option value="DM Sans" selected>DM Sans</option>
+              <option value="Space Grotesk">Space Grotesk</option>
+              <option value="Syne">Syne</option>
+              <option value="Raleway">Raleway</option>
+              <option value="Nunito">Nunito</option>
+              <option value="Georgia">Georgia (serif)</option>
+              <option value="system-ui">System UI</option>
+            </select>
+          </div>
+          <div class="style-row"><label>Base Size</label><div class="slider-wrap"><input type="range" min="12" max="24" value="16" id="slider-fontsize" oninput="updateGlobalStyle('--font-base',this.value+'px');this.nextElementSibling.textContent=this.value+'px'"/><span>16px</span></div></div>
+          <div class="style-row"><label>Line Height</label><div class="slider-wrap"><input type="range" min="1" max="2.2" step="0.1" value="1.6" oninput="updateGlobalStyle('--line-height',this.value);this.nextElementSibling.textContent=this.value"/><span>1.6</span></div></div>
+        </div>
+        <div class="style-section">
+          <h4>Buttons</h4>
+          <div class="style-row"><label>Button Style</label><select onchange="updateButtonStyle(this.value)"><option value="rounded">Rounded</option><option value="pill">Pill</option><option value="square">Square</option></select></div>
+          <div class="style-row"><label>Btn Radius</label><div class="slider-wrap"><input type="range" min="0" max="50" value="8" oninput="updateGlobalStyle('--btn-radius',this.value+'px');this.nextElementSibling.textContent=this.value+'px'"/><span>8px</span></div></div>
+        </div>
+        <div class="style-section">
+          <h4>Spacing &amp; Layout</h4>
+          <div class="style-row"><label>Section Pad</label><div class="slider-wrap"><input type="range" min="20" max="120" value="60" oninput="updateGlobalStyle('--section-pad',this.value+'px');this.nextElementSibling.textContent=this.value+'px'"/><span>60px</span></div></div>
+          <div class="style-row"><label>Container</label><div class="slider-wrap"><input type="range" min="800" max="1400" step="50" value="1200" oninput="updateGlobalStyle('--container',this.value+'px');this.nextElementSibling.textContent=this.value+'px'"/><span>1200px</span></div></div>
+          <div class="style-row"><label>Border Radius</label><div class="slider-wrap"><input type="range" min="0" max="32" value="12" oninput="updateGlobalStyle('--radius',this.value+'px');this.nextElementSibling.textContent=this.value+'px'"/><span>12px</span></div></div>
+        </div>
+        <div class="style-section">
+          <h4>Effects</h4>
+          <div class="style-row"><label>Shadow</label><select onchange="updateGlobalStyle('--shadow',this.value)"><option value="none">None</option><option value="0 2px 8px rgba(0,0,0,0.1)">Subtle</option><option value="0 8px 24px rgba(0,0,0,0.15)" selected>Medium</option><option value="0 16px 48px rgba(0,0,0,0.25)">Strong</option><option value="0 24px 64px rgba(0,0,0,0.4)">Dramatic</option></select></div>
+          <div class="style-row"><label>Animations</label><select onchange="updateGlobalStyle('--anim',this.value)"><option value="enabled" selected>Enabled</option><option value="subtle">Subtle</option><option value="disabled">Disabled</option></select></div>
+        </div>
+      </div>
+
+      <!-- PROJECTS TAB -->
+      <div class="tab-content" id="tab-projects">
+        <div class="tab-header"><h3>Project Library</h3><p>Save &amp; switch between sites</p></div>
+        <div class="projects-toolbar">
+          <button class="proj-btn-new" onclick="createNewProject()">＋ New Project</button>
+          <button class="proj-btn-save" onclick="saveCurrentProject()">💾 Save</button>
+        </div>
+        <div id="projects-list" class="projects-list"></div>
+      </div>
+
+      <!-- LAYERS TAB -->
+      <div class="tab-content" id="tab-layers">
+        <div class="tab-header"><h3>Page Layers</h3><p>Drag to reorder blocks</p></div>
+        <div id="layers-list" class="layers-list"><p class="empty-layers">No blocks yet. Add some blocks!</p></div>
+      </div>
+    </aside>
+
+    <!-- CANVAS -->
+    <main class="canvas-area">
+      <div class="canvas-toolbar">
+        <span class="canvas-info" id="canvas-info">Desktop · 1440px wide</span>
+        <div class="zoom-controls">
+          <button onclick="adjustZoom(-10)">−</button>
+          <span id="zoom-label">100%</span>
+          <button onclick="adjustZoom(10)">+</button>
+          <button onclick="resetZoom()">Reset</button>
+        </div>
+      </div>
+      <div class="canvas-scroll-area">
+        <div class="canvas-wrapper" id="canvas-wrapper">
+          <iframe id="preview-frame" class="preview-frame" src="about:blank" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+        </div>
+      </div>
+    </main>
+
+    <!-- RIGHT PANEL -->
+    <aside class="right-panel" id="right-panel">
+      <div class="right-panel-header">
+        <h3 id="rp-title">Element Editor</h3>
+        <button class="rp-close" onclick="closeRightPanel()">✕</button>
+      </div>
+      <div id="right-panel-content" class="rp-content">
+        <div class="rp-empty"><div class="rp-empty-icon">👆</div><p>Click any element in the preview to edit it</p></div>
+      </div>
+    </aside>
+
+  </div><!-- /.builder-layout -->
+</div><!-- /#app -->
+
+<!-- ═══ MODALS ═══ -->
+
+<!-- Block Settings -->
+<div id="block-settings-modal" class="modal-overlay" style="display:none;">
+  <div class="modal-box"><div class="modal-header"><h3 id="bsm-title">Block Settings</h3><button onclick="closeBlockModal()">✕</button></div>
+  <div id="bsm-content" class="modal-body"></div>
+  <div class="modal-footer"><button class="btn-secondary" onclick="closeBlockModal()">Cancel</button><button class="btn-primary" onclick="saveBlockSettings()">Save Changes</button></div></div>
+</div>
+
+<!-- Export Success -->
+<div id="export-modal" class="modal-overlay" style="display:none;">
+  <div class="modal-box modal-narrow"><div class="modal-header"><h3>🚀 Export Ready!</h3><button onclick="closeExportModal()">✕</button></div>
+  <div class="modal-body"><div class="export-success">
+    <div class="export-rocket">🚀</div><h4>Your site is ready!</h4>
+    <p>One standalone <code>index.html</code> downloaded with all styles inlined and mobile-optimized.</p>
+    <div class="export-files-list"><div class="efl-item"><span>📄</span> index.html — fully self-contained</div></div>
+    <p class="export-note">Open in any browser or upload to any host. No server required.</p>
+  </div></div>
+  <div class="modal-footer"><button class="btn-primary full-width" onclick="closeExportModal()">Done!</button></div></div>
+</div>
+
+<!-- Full Preview -->
+<div id="full-preview-modal" class="modal-overlay" style="display:none;">
+  <div class="modal-box modal-fullscreen"><div class="modal-header"><h3>Full Preview</h3><button onclick="closeFullPreview()">✕ Close</button></div>
+  <div class="modal-body preview-body"><iframe id="full-preview-frame" style="width:100%;height:100%;border:none;" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe></div></div>
+</div>
+
+<!-- Block Selector -->
+<div id="block-selector-modal" class="modal-overlay" style="display:none;">
+  <div class="modal-box modal-narrow"><div class="modal-header"><h3>⚙️ Manage Block Types</h3><button onclick="closeBlockSelectorModal()">✕</button></div>
+  <div class="modal-body" style="padding:20px;"><p style="font-size:13px;color:var(--ui-text2);margin-bottom:16px;">Choose which block types are visible in your library. Hidden types won't appear in the sidebar — existing blocks on your page are not affected.</p><div id="block-selector-list" class="bsl-list"></div></div>
+  <div class="modal-footer"><button class="btn-secondary" onclick="closeBlockSelectorModal()">Cancel</button><button class="btn-primary" onclick="saveBlockSelector()">Save</button></div></div>
+</div>
+
+<!-- Usage Limit -->
+<div id="usage-limit-modal" class="modal-overlay" style="display:none;">
+  <div class="modal-box modal-narrow"><div class="modal-header"><h3>⏱️ Usage Limit Reached</h3><button onclick="document.getElementById('usage-limit-modal').style.display='none'">✕</button></div>
+  <div class="modal-body"><div style="text-align:center;padding:16px 0;">
+    <div style="font-size:48px;margin-bottom:12px;">🚧</div>
+    <h4 id="ulm-title" style="font-family:'Syne',sans-serif;font-size:18px;font-weight:700;margin-bottom:8px;color:var(--ui-text);">Daily limit reached</h4>
+    <p id="ulm-body" style="font-size:14px;color:var(--ui-text2);line-height:1.6;margin-bottom:20px;">Upgrade to continue building.</p>
+    <div class="lmt-row" style="justify-content:center;margin-bottom:20px;"><span class="lmt-tier" id="ulm-tier-badge">Free</span></div>
+    <button class="btn-primary full-width" onclick="document.getElementById('usage-limit-modal').style.display='none';">Got It</button>
+  </div></div></div>
+</div>
+
+<!-- Collaboration Modal -->
+<div id="collab-modal" class="modal-overlay" style="display:none;">
+  <div class="modal-box modal-narrow">
+    <div class="modal-header"><h3>👥 Share &amp; Collaborate</h3><button onclick="closeCollabModal()">✕</button></div>
+    <div class="modal-body">
+      <div class="collab-section">
+        <h4>Your Project Invite Code</h4>
+        <p style="font-size:13px;color:var(--ui-text2);margin-bottom:12px;">Share this code with collaborators. They get 2 hours/day editing access. Exports are owner-only.</p>
+        <div class="collab-code-display" id="collab-code-display">
+          <span id="collab-code-value" style="font-family:monospace;font-size:18px;font-weight:700;letter-spacing:2px;">—</span>
+          <button class="collab-copy-btn" onclick="copyCollabCode()">Copy</button>
+        </div>
+        <button class="btn-primary" style="width:100%;margin-top:12px;" onclick="generateCollabCode()">Generate New Code</button>
+      </div>
+      <div class="collab-divider"></div>
+      <div class="collab-section">
+        <h4>Join as Collaborator</h4>
+        <p style="font-size:13px;color:var(--ui-text2);margin-bottom:12px;">Enter a code from the project owner to join their session.</p>
+        <div class="gate-input-wrap">
+          <input type="text" id="collab-join-input" placeholder="Enter invite code" maxlength="12" style="letter-spacing:2px;text-transform:uppercase;"/>
+          <button onclick="joinCollabSession()">Join →</button>
+        </div>
+        <p id="collab-join-status" style="font-size:12px;margin-top:8px;min-height:16px;"></p>
+      </div>
+      <div class="collab-section" id="collab-active-section" style="display:none;">
+        <h4>🟢 Live Session Active</h4>
+        <p id="collab-active-info" style="font-size:13px;color:var(--ui-text2);"></p>
+        <button class="btn-secondary" style="width:100%;margin-top:8px;" onclick="leaveCollabSession()">Leave Session</button>
+      </div>
+    </div>
+    <div class="modal-footer"><button class="btn-secondary" onclick="closeCollabModal()">Close</button></div>
+  </div>
+</div>
+
+<input type="file" id="image-upload-input" accept="image/*" style="display:none;"/>
+<script src="script.js"></script>
+</body>
+</html>
